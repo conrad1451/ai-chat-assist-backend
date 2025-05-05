@@ -3,7 +3,8 @@ from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
 
 # Initialize the Gemma chat model (replace with your actual model name)
-llm = ChatGoogleGenerativeAI(model_name="gemini-pro")  # Or a specific Gemma model
+# CHQ: GeminiAI fixed this line to updated syntax
+llm = ChatGoogleGenerativeAI(model="gemini-pro") 
 
 # Dictionary to store chat memories, keyed by session ID
 chat_memories = {}
