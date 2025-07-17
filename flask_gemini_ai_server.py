@@ -1,9 +1,15 @@
+# ai-chat-assist-backend.py
+
 from flask import Flask, jsonify
+from flask_cors import CORS # Import CORS
+
 import requests
 import json
 import os
 
 app = Flask(__name__)
+CORS(app) # Initialize CORS for your Flask app
+
 
 # It's better to store your API key as an environment variable
 # api_key = os.environ.get("GEMINI_API_KEY")
