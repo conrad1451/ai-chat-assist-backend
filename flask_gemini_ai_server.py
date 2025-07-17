@@ -6,7 +6,8 @@ import os
 app = Flask(__name__)
 
 # It's better to store your API key as an environment variable
-api_key = os.environ.get("GEMINI_API_KEY")
+# api_key = os.environ.get("GEMINI_API_KEY")
+api_key = os.environ.get("GEMINI_SCHOOL_API_KEY")
 
 if not api_key:
     print("Error: GEMINI_API_KEY environment variable not set.")
